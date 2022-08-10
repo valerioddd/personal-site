@@ -76,8 +76,8 @@ class TicTacToe extends React.Component {
     
     return (
       <div className="game">
-        <div className="title">TicTacToe</div>
-        <div className="status">{status}</div>
+        <h2 className="title">TicTacToe</h2>
+        <h3 className="status">{status}</h3>
         <div>
           <Board 
             squares = {current.squares}

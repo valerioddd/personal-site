@@ -4,12 +4,13 @@
 }
 
 .title {
-  font-size: large;
+  font-size: larger;
   font-weight: bold;
   color: white;
 }
 
 .status {
+  font-size: larger;
   color: rgb(192, 192, 192);
   margin-top: 10px;
 }
@@ -34,8 +35,8 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
-  height: 34px;
-  width: 34px;
+  height: 70px;
+  width: 70px;
   text-align: center;
   padding: 0;
   margin-top: -1;
