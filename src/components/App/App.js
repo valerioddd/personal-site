@@ -1,5 +1,7 @@
 import logo from '../../images/shared/foto_personale.png';
 import PointSpinner from '../loader_pointSpinner/PointSpinner';
+import RowIndicator from '../loader_rowIndicator/RowIndicator';
+import TicTacToe from '../game_ticTacToe/TicTacToe';
 import './App.css';
 
 function App() {
@@ -11,10 +13,16 @@ function App() {
           className="fotoPersonale"
           alt="foto_personale" />
         <p>
-          <code>Work in progress, stay tuned</code>
+          <code>Work in progress, stay tuned!</code>
         </p>
-        <PointSpinner />
       </header>
+      <body className="App-body">
+        <p className='descr'>In the meantime you can play something</p>
+        <RowIndicator />
+        <div className='firstComponent'>
+          <TicTacToe />
+        </div>
+      </body>
     </div>
   );
 }
