@@ -1,5 +1,4 @@
 import logo from '../../images/shared/foto_personale.png';
-import PointSpinner from '../loader_pointSpinner/PointSpinner';
 import RowIndicator from '../loader_rowIndicator/RowIndicator';
 import TicTacToe from '../game_ticTacToe/TicTacToe';
 import './App.css';

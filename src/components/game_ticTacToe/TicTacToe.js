@@ -74,8 +74,6 @@ class TicTacToe extends React.Component {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
     
-    const sort = (this.state.sortedAsc) ? "Sort ASC" : "Sort DESC";
-
     return (
       <div className="game">
         <div className="title">TicTacToe</div>
