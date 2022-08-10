@@ -7,17 +7,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img 
-          src={logo} 
-          className="fotoPersonale"
-          alt="foto_personale" />
-        <p>
-          <code>Work in progress, stay tuned!</code>
-        </p>
+        <div className='main-image'>
+          <img 
+            src={logo} 
+            className="fotoPersonale"
+            alt="foto_personale" />
+          <p>
+            <code>Work in progress, stay tuned!</code>
+          </p>
+        </div>
+        <div className='indicator'>
+          <p className='descr'>In the meantime you can play something</p>
+          <RowIndicator />
+        </div>
       </header>
       <body className="App-body">
-        <p className='descr'>In the meantime you can play something</p>
-        <RowIndicator />
         <div className='firstComponent'>
           <TicTacToe />
         </div>
