@@ -1,4 +1,4 @@
-import logo from '../../images/foto_personale.png';
+import logo from '../../images/shared/foto_personale.png';
 import PointSpinner from '../loader_pointSpinner/PointSpinner';
 import './App.css';
 
