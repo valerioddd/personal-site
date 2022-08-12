@@ -1,6 +1,6 @@
 import './Contacts.css';
 
-import { Instagram, Linkedin, Mail } from 'react-feather';
+import { Linkedin, Mail } from 'react-feather';
 
 function Contacts(props) {
     return (
