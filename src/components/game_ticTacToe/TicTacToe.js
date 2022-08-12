@@ -49,8 +49,7 @@ class TicTacToe extends React.Component {
     this.state = {
       history: [{
         squares: Array(9).fill(null),
-        movedLocation: Array(2),
-        winnerTris: Array(3).fill(null)
+        movedLocation: Array(2)
       }],
       sortedAsc: true,
       stepNumber: 0,
@@ -62,7 +61,6 @@ class TicTacToe extends React.Component {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
-
     let status;
     let isWinner;
     if(winner) {
@@ -75,7 +73,7 @@ class TicTacToe extends React.Component {
     }
     
     return (
-      <div className="game">
+      <div className="game" id="tictactoe">
         <h2 className="title">TicTacToe</h2>
         <h3 className="status">{status}</h3>
         <div>
@@ -100,6 +98,7 @@ class TicTacToe extends React.Component {
 
   //Gestione per il click sulla cella
   handleClick(i, col, row) {
+    console.log(i, col, row);
     //Taglia l'history in base allo stepNumber
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     //Current è uguaule all'ultimo square

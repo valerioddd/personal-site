@@ -1,0 +1,12 @@
+.Contacts {
+    align-items: baseline;
+    justify-content: start;
+    color: rgb(192, 192, 192);
+    font-family: "JABS_Font";
+}
+
+
+.title {
+    font-size: xx-large;
+    margin-bottom: 100px;
+}
