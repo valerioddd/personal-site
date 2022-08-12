@@ -1,7 +1,7 @@
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { Link, Outlet } from 'react-router-dom';
 
-import { Home as HomeIcon } from 'react-feather';
+import { Home as HomeIcon, Menu } from 'react-feather';
 
 import './CustomNavbar.css';
 import React from 'react';
@@ -28,7 +28,9 @@ class CustomNavbar extends React.Component {
               aria-controls="basic-navbar-nav" 
               onClick={() => this.setState({
                                 isCollapsed: !this.state.isCollapsed
-                              })}/>
+                              })}>
+                <Menu />
+            </Navbar.Toggle>
 
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav>

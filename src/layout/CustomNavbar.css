@@ -1,3 +1,16 @@
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+   border: 0;
+}
+
+.navbar-toggler:hover {
+   border-radius: 200px 200px 200px 200px !important;
+   -moz-border-radius: 200px 200px 200px 200px !important;
+   -webkit-border-radius: 200px 200px 200px 200px !important;
+   border: 0px solid #000000;
+}
+
 .navBg {
     background-color: rgb(22, 25, 29);
  }
@@ -5,5 +18,4 @@
 .container {
    align-items: center;
    text-align: center;
-   padding-right: 26px !important;
 }
