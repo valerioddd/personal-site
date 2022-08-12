@@ -1,7 +1,7 @@
 import './Home.css';
 import TicTacToe from '../game_ticTacToe/TicTacToe';
 import RowIndicator from '../loader_rowIndicator/RowIndicator';
-import logo from '../../images/shared/foto_personale.png';
+import logo from '../../images/shared/foto_personale.JPG';
 
 function Home() {
     return (
