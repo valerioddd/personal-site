@@ -6,8 +6,16 @@
    border: 0;
 }
 
+.navbar {
+   transition: all 0.4s linear;
+}
+
+.navbar-brand {
+   color: rgb(192, 192, 192);
+}
+
 .navBg {
-    background-color: rgb(22, 25, 29);
+   background-color: rgba(31, 31, 31, 0.7);
  }
 
 .container {

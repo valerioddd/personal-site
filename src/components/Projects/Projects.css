@@ -1,0 +1,26 @@
+.title {
+    font-size: xx-large;
+    margin-bottom: 0;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.firstComponent {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.projects-table {
+    color: white;
+    text-align: left;
+    border-color: #c0c0c0;
+    font-size: smaller;
+}
+
+.projects-table-desc {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c0c0c0;
+}

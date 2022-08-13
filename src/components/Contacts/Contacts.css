@@ -1,12 +1,20 @@
-.Contacts {
-    align-items: baseline;
-    justify-content: start;
+.component {
     color: rgb(192, 192, 192);
     font-family: "JABS_Font";
-}
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 
 .title {
     font-size: xx-large;
-    margin-bottom: 100px;
+}
+
+
+.icon {
+    height: 40px;
+    width: 40px;
 }

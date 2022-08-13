@@ -5,7 +5,7 @@ body {
     sans-serif, 'JABS_Font';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(40, 44, 52);
+  background-color: rgb(31, 31, 31);
 }
 
 code {
@@ -16,4 +16,18 @@ code {
 @font-face {
   font-family: "JABS_Font";
   src: local("JABS_Font"), url("./fonts/MazzardH-SemiBold.otf") format("truetype");
+}
+
+.component {
+  color: rgb(192, 192, 192);
+  font-family: "JABS_Font";
+}
+
+.title-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 55vh;
+  margin-bottom: 100px;
 }
