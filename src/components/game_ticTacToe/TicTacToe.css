@@ -3,12 +3,6 @@
   flex-direction: column;
 }
 
-.title {
-  font-size: large;
-  color: rgb(0, 0, 0);
-  font-family: "JABS_Font";
-}
-
 .status {
   font-size: larger;
   color: #555;

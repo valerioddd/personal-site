@@ -12,7 +12,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  color:#ff0062;
+  color:#ff0060;
 }
 
 @font-face {
@@ -21,7 +21,14 @@ code {
 }
 
 .component {
-  font-family: "JABS_Font";
+    font-family: "JABS_Font";
+    color: rgb(0, 0, 0);
+    font-family: "JABS_Font";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .title-div {
@@ -31,4 +38,10 @@ code {
   flex-direction: column;
   min-height: 55vh;
   margin-bottom: 100px;
+}
+
+.title {
+  font-size: xx-large;
+  color: rgb(0, 0, 0);
+  font-family: "JABS_Font";
 }

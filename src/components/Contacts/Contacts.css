@@ -1,18 +1,49 @@
-.component {
-    color: rgb(0, 0, 0);
-    font-family: "JABS_Font";
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.title-div.contacts {
+    margin-bottom: 0;
 }
 
-.title {
-    font-size: xx-large;
+.component.contacts {
+    transform: translateY(-100px);
 }
 
+.block.contacts {
+    margin-bottom: 20px;
+    
+}
+
+p.info {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    position: relative;
+    display: block;
+}
+
+.info:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0060;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.info:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+.mappa {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 
 .icon {
     height: 40px;

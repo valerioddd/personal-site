@@ -8,26 +8,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouseChimney, faBars  } from '@fortawesome/free-solid-svg-icons'
 
 function CustomNavbar() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <>
-      <Navbar expand="lg" variant='light' className={isCollapsed ? "fixed-top navBg" : "fixed-top"}>
+      <Navbar expand="lg" variant='light' 
+        className={expanded==="expanded" ? "fixed-top navBg" : "fixed-top"}
+        expanded={expanded}>
         <Container>
           <Navbar.Brand as={Link} to="/" >
             <FontAwesomeIcon icon={faHouseChimney} size="lg"/>
           </Navbar.Brand>
           <Navbar.Toggle 
             aria-controls="basic-navbar-nav" 
-            onClick={() => setIsCollapsed(!isCollapsed) }>
+            onClick={() => setExpanded(expanded ? false : "expanded") }>
             <FontAwesomeIcon icon={faBars} size="lg"/>
           </Navbar.Toggle>
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Nav.Link as={Link} to="/" >Home</Nav.Link>
-              <Nav.Link as={Link} to="/projects" >Projects</Nav.Link>
-              <Nav.Link as={Link} to="/contacts" >Contacts</Nav.Link>
+              <Nav.Link as={Link} onClick={() => setExpanded(false)} to="/" >Home</Nav.Link>
+              <Nav.Link as={Link} onClick={() => setExpanded(false)} to="/projects" >Projects</Nav.Link>
+              <Nav.Link as={Link} onClick={() => setExpanded(false)} to="/contacts" >Contacts</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
