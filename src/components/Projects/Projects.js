@@ -38,22 +38,20 @@ const Projects = () => {
                 </code>
             </p>
         </div>
-        <div className="component">
-            <div className="firstComponent">
-                <p>GitHub projects</p>
-                <table className="table table-bordered table-sm projects-table">
-                    <tbody>
-                        {posts.map((post) => {
-                            return (
-                                <tr>
-                                    <td>{post.name}</td>
-                                    <td className='projects-table-desc'>{post.description}</td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table>
-            </div>
+        <div className="component projects">
+            <p>GitHub projects</p>
+            <table className="table table-bordered table-sm projects-table">
+                <tbody>
+                    {posts.map((post) => {
+                        return (
+                            <tr key={post.id}>
+                                <td>{post.name}</td>
+                                <td className='projects-table-desc'>{post.description}</td>
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
         </div>
         </>
     );

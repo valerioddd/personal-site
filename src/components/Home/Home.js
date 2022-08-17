@@ -9,7 +9,7 @@ import { faPersonDigging, faArrowDownLong } from '@fortawesome/free-solid-svg-ic
 function Home() {
     return (
         <div className="Home">
-            <div className="first">
+            <div className="first section">
                 <div className='head'>
                     <img 
                         src={logo} 
@@ -27,7 +27,7 @@ function Home() {
                     <FontAwesomeIcon icon={faArrowDownLong} bounce size="2x" className='indicator'/>
                 </div>
             </div>
-            <div className="second">
+            <div className="second section">
                 <TicTacToe />
             </div>
         </div>

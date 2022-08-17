@@ -13,8 +13,7 @@ html {
     background-color: #65be7a;
     background-image: 
     linear-gradient(to right, transparent 50%, #fff 50%)
-    , repeating-radial-gradient( circle at 0 0, transparent 0, #65be7a 11px )
-    , repeating-linear-gradient( #ffffff55, #ffffff );
+    , repeating-linear-gradient( -45deg, #ffffff, #ffffff 5px, #65be7a 5px, #65be7a 25px );;
     /*background: linear-gradient(90deg, #65be7a 50%, #fff 50%);*/
 }
 
