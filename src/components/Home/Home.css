@@ -35,7 +35,7 @@
   font-size: x-large;
   color: #fff;
   transform: translateY(-100px);
-  /*mix-blend-mode: exclusion;*/
+  mix-blend-mode: exclusion;
 }
 
 .under-construction {
