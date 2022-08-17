@@ -1,12 +1,28 @@
+html {
+    -webkit-background-size: 100% 100% cover;
+    -moz-background-size: 100% 100% cover;
+    -o-background-size: 100% 100% cover;
+    background-size: 100% 100% cover;
+    /* set the padding and margin to "0" */
+    margin: 0;
+    padding: 0;
+    /* set the position rules */
+    top: 0;
+    left: 0;
+
+    background-color: #65be7a;
+    background-image: 
+    linear-gradient(to right, transparent 50%, #fff 50%)
+    , repeating-radial-gradient( circle at 0 0, transparent 0, #65be7a 11px )
+    , repeating-linear-gradient( #ffffff55, #ffffff );
+    /*background: linear-gradient(90deg, #65be7a 50%, #fff 50%);*/
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif, 'JABS_Font';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  background: linear-gradient(90deg, #65be7a 50%, #fff 50%);
+    background-color: rgba(0,0,0,0);
 }
 
 code {
