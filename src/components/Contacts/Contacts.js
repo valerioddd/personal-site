@@ -36,8 +36,8 @@ function Contacts(props) {
                 title="Mappa"
                 className='mappa'
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d723024.3417503344!2d8.2717235!3d44.9372877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47877431ed416505%3A0xd647f5990f0c62d9!2sAlessandria%2C%20Province%20of%20Alessandria!5e0!3m2!1sen!2sit!4v1660726634594!5m2!1sen!2sit" 
-                width="600" 
-                height="450"
+                width="95%" 
+                height="100%"
                 loading="lazy"
             ></iframe>
         </div>

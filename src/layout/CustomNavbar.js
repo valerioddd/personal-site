@@ -1,5 +1,5 @@
 import './CustomNavbar.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { Link, Outlet } from 'react-router-dom';
@@ -9,6 +9,13 @@ import { faHouseChimney, faBars  } from '@fortawesome/free-solid-svg-icons'
 
 function CustomNavbar() {
   const [expanded, setExpanded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setExpanded(false);
+    }, 10000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -27,7 +34,6 @@ function CustomNavbar() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Nav.Link as={Link} onClick={() => setExpanded(false)} to="/" >Home</Nav.Link>
               <Nav.Link as={Link} onClick={() => setExpanded(false)} to="/projects" >Projects</Nav.Link>
               <Nav.Link as={Link} onClick={() => setExpanded(false)} to="/contacts" >Contacts</Nav.Link>
             </Nav>

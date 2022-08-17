@@ -11,6 +11,20 @@ function App() {
   return (
     <>
     <div className='App'>
+      <div className="area">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={ <CustomNavbar />} >

@@ -1,22 +1,29 @@
-.navbar-toggler,
-.navbar-toggler::after,
-.navbar-toggler:hover,
+.navbar-toggler {
+    color: #000;
+    border: 0;
+}
+
+.navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler:focus {
-   border: 0;
-   color: rgb(0, 0, 0);
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .navbar {
-   transition: all 0.4s linear;
-   color: rgb(0, 0, 0);
+    transition: all 0.4s linear;
+    font-weight: bold;
+}
+
+a.nav-link {
+    color: #ffffff;;
 }
 
 .navBg {
-   background-color: rgba(204, 204, 204, 0.7);
+    background-color: #ff0060b3;
  }
 
 .container {
-   align-items: center;
-   text-align: center;
+    align-items: center;
+    text-align: center;
 }

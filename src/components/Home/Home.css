@@ -1,66 +1,108 @@
 .Home {
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
+    overflow-y: scroll;
+    overflow: hidden;
+    
+    scroll-snap-type: y mandatory;
 
-.first {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-.head {
-  min-height: 60vh;
-  margin-top: 20vh;
-}
-
-.fotoPersonale {
-  height: 250px;
-  width: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 100px 15px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 100px 15px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 100px 15px rgba(0, 0, 0, 1);
-  background: linear-gradient(90deg, #65be7a 50%, #fff 50%);
-}
-
-.work-in-progress {
-  font-family: "JABS_Font";
-  font-size: x-large;
-  color: #fff;
-  transform: translateY(-100px);
-  mix-blend-mode: exclusion;
-}
-
-.under-construction {
-  color: rgb(0, 0, 0);
-}
-
-.indicator {
-  color: #000;
-}
-
-/* TicTacToe */
 
 .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100vh;
+
     scroll-snap-align: start;
     scroll-snap-stop: always;
+
+    font-family: "JABS_Font";
 }
 
-.second {
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+.subtitle {
+    font-size: smaller;
 }
+
+.home.title-div {
+    margin-bottom: 0;
+}
+
+.section-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-color: #000;
+    
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.grid-table {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-color: #000;
+    align-items: center;
+}
+
+.grid-table > div {
+    text-align: center;
+    font-size: 30px;
+  }
+
+.grid-table-inner {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.place {
+    font-size: medium;
+    color: #000;
+}
+
+.description {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color:#ff0060;
+    font-size: small;
+}
+
+.where {
+    font-family: "Arial";
+    font-size: small;
+    font-style: italic;
+}
+
+.duration {
+    font-family: "Arial";
+    font-size: x-small;
+}
+
+/* FIRST SECTION */
+
+.fotoPersonale {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 1);
+    background: linear-gradient(90deg, #65be7a 50%, #fff 50%);
+}
+  
+.main-text {
+    font-family: "JABS_Font";
+    font-size: x-large;
+    color: #fff;
+    transform: translateY(-100px);
+    mix-blend-mode: exclusion;
+}
+  
+.indicator {
+    color: #000;
+}
+  
+  /* third */
+
