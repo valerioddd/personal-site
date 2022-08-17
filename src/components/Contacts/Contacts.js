@@ -26,10 +26,16 @@ function Contacts(props) {
                 </div>
                 <div onClick={() => 
                         window.open('https://www.linkedin.com/in/valerio-ditta/', '_blank')}>
-                    <FontAwesomeIcon icon={faEnvelope} size="2x"/>        
+                    <FontAwesomeIcon icon={faEnvelope} size="2x" className='icon'/>        
                     <p className='info'>Valerio Ditta</p>
                 </div>
             </div>
+        </div>
+        <div>
+            <script async 
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8368813446587107"
+                crossorigin="anonymous">
+            </script>
         </div>
         </>
     );

@@ -4,18 +4,19 @@
   flex-direction: column;
 }
 
-.indicator {
-  text-align: center;
-}
-
 .first {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
   text-align: center;
+  margin-bottom: 20vh;
+}
+
+.head {
+  min-height: 60vh;
+  margin-top: 20vh;
 }
 
 .fotoPersonale {
@@ -23,22 +24,31 @@
   width: 250px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0px 0px 15px 1px rgba(255,255,255,1);
-  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 80px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 80px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 100px 5px rgba(0,0,0,1);
+  background: linear-gradient(90deg, #65be7a 50%, #fff 50%);
 }
 
 .work-in-progress {
   font-family: "JABS_Font";
-  color: rgb(192, 192, 192);
+  font-size: x-large;
+  color: #fff;
+  transform: translateY(-100px);
+  /*mix-blend-mode: exclusion;*/
 }
 
-.head {
-  min-height: 60vh;
+.under-construction {
+  color: rgb(0, 0, 0);
+}
+
+.indicator {
+  color: #000;
 }
 
 /* TicTacToe */
 
-.ticTacToe {
+.second {
   justify-content: center;
   flex-direction: column;
   align-items: center;

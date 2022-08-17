@@ -14,13 +14,13 @@
 }
 
 .projects-table {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: left;
-    border-color: #c0c0c0;
+    border-color: #000000;
     font-size: smaller;
 }
 
 .projects-table-desc {
     font-family: Arial, Helvetica, sans-serif;
-    color: #c0c0c0;
+    color: #000000;
 }

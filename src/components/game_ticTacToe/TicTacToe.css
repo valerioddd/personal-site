@@ -5,13 +5,13 @@
 
 .title {
   font-size: large;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: "JABS_Font";
 }
 
 .status {
   font-size: larger;
-  color: rgb(192, 192, 192);
+  color: #555;
   margin-top: 10px;
 }
 
@@ -31,7 +31,7 @@
 
 .square {
   background: #fff;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #000;
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;

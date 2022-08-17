@@ -1,7 +1,7 @@
 import './Home.css';
 
 import TicTacToe from '../game_ticTacToe/TicTacToe';
-import logo from '../../images/shared/foto_personale.JPG';
+import logo from '../../images/foto_personale.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonDigging, faArrowDownLong } from '@fortawesome/free-solid-svg-icons'
@@ -20,14 +20,14 @@ function Home() {
                         <FontAwesomeIcon icon={faPersonDigging} beat size="2x"/>
                     </div>
                 </div>
-                <div className='indicator' onClick={() => window.location.replace("/#tictactoe")} >
+                <div onClick={() => window.location.replace("/#tictactoe")} >
                     <p>
                         <code>In the meantime you can play something</code>
                     </p>
-                    <FontAwesomeIcon icon={faArrowDownLong} bounce size="2x"/>
+                    <FontAwesomeIcon icon={faArrowDownLong} bounce size="2x" className='indicator'/>
                 </div>
             </div>
-            <div className="ticTacToe">
+            <div className="second">
                 <TicTacToe />
             </div>
         </div>

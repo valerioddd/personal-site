@@ -4,18 +4,16 @@
 .navbar-toggler:active,
 .navbar-toggler:focus {
    border: 0;
+   color: rgb(0, 0, 0);
 }
 
 .navbar {
    transition: all 0.4s linear;
-}
-
-.navbar-brand {
-   color: rgb(192, 192, 192);
+   color: rgb(0, 0, 0);
 }
 
 .navBg {
-   background-color: rgba(31, 31, 31, 0.7);
+   background-color: rgba(204, 204, 204, 0.7);
  }
 
 .container {

@@ -5,12 +5,14 @@ body {
     sans-serif, 'JABS_Font';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(31, 31, 31);
+  height: 100vh;
+  background: linear-gradient(90deg, #65be7a 50%, #fff 50%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  color:#ff0062;
 }
 
 @font-face {
@@ -19,7 +21,6 @@ code {
 }
 
 .component {
-  color: rgb(192, 192, 192);
   font-family: "JABS_Font";
 }
 

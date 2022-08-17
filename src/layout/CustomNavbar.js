@@ -12,7 +12,7 @@ function CustomNavbar() {
 
   return (
     <>
-      <Navbar expand="lg" variant='dark' className={isCollapsed ? "fixed-top navBg" : "fixed-top"}>
+      <Navbar expand="lg" variant='light' className={isCollapsed ? "fixed-top navBg" : "fixed-top"}>
         <Container>
           <Navbar.Brand as={Link} to="/" >
             <FontAwesomeIcon icon={faHouseChimney} size="lg"/>

@@ -1,5 +1,5 @@
 .component {
-    color: rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
     font-family: "JABS_Font";
 
     display: flex;
@@ -17,4 +17,5 @@
 .icon {
     height: 40px;
     width: 40px;
+    color: rgb(0, 0, 0);
 }
