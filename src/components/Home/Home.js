@@ -1,7 +1,12 @@
 import './Home.css';
+import React, { useState } from 'react';
 
 import logo from '../../images/foto_personale.png';
+import school from '../../data/school.json'
+import work from '../../data/work.json'
 
+import Modal from '../Modal/Modal';
+import Section from './Section';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDownLong
     , faArrowUpLong
@@ -9,6 +14,22 @@ import { faArrowDownLong
     , faBriefcase } from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
+    const [show, setShow] = useState(false);
+    const [modalTitle, setModalTitle] = useState("");
+    const [modalActivity, setModalActivity] = useState("");
+    const [modalDuration, setModalDuration] = useState("");
+    const [modalWhere, setModalWhere] = useState("");
+    const [modalDescription, setModalDescription] = useState("");
+
+    function showModal(title, activity, duration, where, description) {
+        setModalTitle(title);
+        setModalActivity(activity);
+        setModalDuration(duration);
+        setModalWhere(where);
+        setModalDescription(description);
+        setShow(true)
+    }
+
     return (
         <div className="Home">
             <div className="section" id="first">
@@ -32,27 +53,12 @@ function Home() {
                     <FontAwesomeIcon icon={faArrowUpLong} bounce size="2x" className='arrow'/>
                     <p><code>Go to previous</code></p>
                 </div>
-                <div className='section-info grid-table'>
-                    <div>
-                        <FontAwesomeIcon icon={faGraduationCap} size="3x"/>
-                        <h1 className='title'>Who I am</h1>
-                        <p className='subtitle'><code>School</code></p>
-                    </div>
-                    <div className="grid-table-inner">
-                        <div>
-                            <div className='place'>ITIS A. Volta</div>
-                            <div className='description'>High school</div>
-                            <div className='where'>Alessandria (Italy)</div>
-                            <div className='duration'>2010-2015</div>
-                        </div>
-                        <div>
-                            <div className='place'>UniUPO</div>
-                            <div className='description'>Bachelor degree in IT</div>
-                            <div className='where'>Alessandria (Italy)</div>
-                            <div className='duration'>2015-2019</div>
-                        </div> 
-                    </div>
-                </div>
+                <Section
+                    title="School"
+                    leftIcon={faGraduationCap}
+                    list={school}
+                    onClick={showModal}
+                    />
                 <div onClick={() => window.location.replace("/#third")} >
                     <p><code>Something more</code></p>
                     <FontAwesomeIcon icon={faArrowDownLong} bounce size="2x" className='arrow'/>
@@ -64,46 +70,22 @@ function Home() {
                     <FontAwesomeIcon icon={faArrowUpLong} bounce size="2x" className='arrow'/>
                     <p><code>Go to previous</code></p>
                 </div>
-                <div className='third section-info grid-table'>
-                    <div>
-                        <FontAwesomeIcon icon={faBriefcase} size="3x"/>
-                        <h1 className='title'>Who I am</h1>
-                        <p className='subtitle'><code>Work</code></p>
-                    </div>
-                    <div className="grid-table-inner">
-                        <div>
-                            <div className='place'>Accenture</div>
-                            <div className='description'>Developer</div>
-                            <div className='where'>Milan (Italy)</div>
-                            <div className='duration'>2021-<b>Present</b></div>
-                        </div> 
-                        <div>
-                            <div className='place'>HPE CDS</div>
-                            <div className='description'>Developer</div>
-                            <div className='where'>Milan (Italy)</div>
-                            <div className='duration'>2019-2021</div>
-                        </div> 
-                        <div>
-                            <div className='place'>Hewlett Packard Enterprise</div>
-                            <div className='description'>Stage</div>
-                            <div className='where'>Milan (Italy)</div>
-                            <div className='duration'>2018-2019</div>
-                        </div> 
-                        <div>
-                            <div className='place'>McDonalds</div>
-                            <div className='description'>Crew</div>
-                            <div className='where'>Alessandria (Italy)</div>
-                            <div className='duration'>2017-2018</div>
-                        </div> 
-                        <div>
-                            <div className='place'>Food Lab</div>
-                            <div className='description'>Waiter</div>
-                            <div className='where'>Essex Road, London (UK)</div>
-                            <div className='duration'>2014</div>
-                        </div>
-                    </div>
-                </div>
+                <Section
+                    title="Work"
+                    leftIcon={faBriefcase}
+                    list={work}
+                    onClick={showModal}
+                    />
             </div>
+            <Modal 
+                show={show}
+                title={modalTitle}
+                activity={modalActivity}
+                duration={modalDuration}
+                where={modalWhere}
+                description={modalDescription}
+                onClose={() => setShow(false)} 
+                />
         </div>
     );
 }

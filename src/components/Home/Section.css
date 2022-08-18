@@ -1,0 +1,56 @@
+.section-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-color: #000;
+    
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.section-info > div > .section-icon {
+    color: #000;
+}
+
+.section-info > div > .title {
+    color: #000;
+}
+
+.grid-table {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-color: #000;
+    align-items: center;
+}
+
+.grid-table > div {
+    text-align: center;
+    font-size: 30px;
+  }
+
+.grid-table-inner {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.place {
+    font-size: medium;
+    color: #000;
+}
+
+.activity {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color:#ff0060;
+    font-size: small;
+}
+
+.where {
+    font-family: "Arial";
+    font-size: small;
+    font-style: italic;
+}
+
+.duration {
+    font-family: "Arial";
+    font-size: x-small;
+}

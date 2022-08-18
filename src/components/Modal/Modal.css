@@ -1,0 +1,52 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    
+    background-color : #fff;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-header, div.modal-footer {
+}
+
+.modal-title {
+}
+
+.modal-body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.modal-activity {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color:#ff0060;
+    font-size: small;
+}
+
+.modal-where {
+    font-family: "Arial";
+    font-size: small;
+    font-style: italic;
+}
+
+.modal-duration {
+    font-family: "Arial";
+    font-size: x-small;
+}
+
+.modal-description{
+    font-family: "Arial";
+    font-size: smaller;
+}
