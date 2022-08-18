@@ -1,3 +1,7 @@
+.Contacts {
+    z-index: 1;
+}
+
 .title-div.contacts {
     margin-bottom: 0;
 }

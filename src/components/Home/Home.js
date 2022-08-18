@@ -11,7 +11,7 @@ import { faArrowDownLong
 function Home() {
     return (
         <div className="Home">
-            <div className="first section" id="first">
+            <div className="section" id="first">
                 <div>
                     <img 
                         src={logo} 
@@ -59,7 +59,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="third section" id="third">
+            <div className="section" id="third">
                 <div onClick={() => window.location.replace("/#second")} >
                     <FontAwesomeIcon icon={faArrowUpLong} bounce size="2x" className='arrow'/>
                     <p><code>Go to previous</code></p>

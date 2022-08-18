@@ -11,6 +11,16 @@ function App() {
   return (
     <>
     <div className='App'>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={ <CustomNavbar />} >
+            <Route index element={ <Home />} />
+            <Route path="contacts/*" element={ <Contacts />} />
+            <Route path="projects/*" element={ <Projects />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      
       <div className="area">
         <ul className="circles">
           <li></li>
@@ -25,15 +35,7 @@ function App() {
           <li></li>
         </ul>
       </div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={ <CustomNavbar />} >
-            <Route index element={ <Home />} />
-            <Route path="contacts/*" element={ <Contacts />} />
-            <Route path="projects/*" element={ <Projects />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+     
     </div>
     </>
   );
