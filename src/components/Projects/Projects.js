@@ -9,7 +9,7 @@ const Projects = () => {
             method: 'GET',
             headers: {
                 'User-Agent': '',
-                'Authorization': 'token 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'
+                'Authorization': 'token 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'
             },
         })
            .then((response) => response.json())
