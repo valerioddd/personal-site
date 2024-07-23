@@ -1,9 +1,16 @@
 [
     {
+        "place": "PwC",
+        "activity": "Software Engineer",
+        "where": "Wien (Austria)",
+        "duration": "2024-Present",
+        "description": "Very long long long long long long description"
+    },
+    {
         "place": "Accenture",
         "activity": "Developer",
         "where": "Milan (Italy)",
-        "duration": "2021-Present",
+        "duration": "2021-2024",
         "description": "Very long long long long long long description"
     },
     {
