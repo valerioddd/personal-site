@@ -1,5 +1,12 @@
 [
     {
+        "place": "Accenture",
+        "activity": "Software Engineer",
+        "where": "Milan (Italy)",
+        "duration": "2025 - Present",
+        "description": "Very long long long long long long description"
+    },
+    {
         "place": "PwC",
         "activity": "Software Engineer",
         "where": "Wien (Austria)",
@@ -8,14 +15,14 @@
     },
     {
         "place": "Accenture",
-        "activity": "Developer",
+        "activity": "Software Engineer",
         "where": "Milan (Italy)",
         "duration": "2021-2024",
         "description": "Very long long long long long long description"
     },
     {
         "place": "HPE CDS",
-        "activity": "Developer",
+        "activity": "Software Engineer",
         "where": "Milan (Italy)",
         "duration": "2019-2021",
         "description": "Very long long long long long long description"
